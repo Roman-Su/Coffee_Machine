@@ -6,7 +6,7 @@ import imutils
 cap = cv2.VideoCapture(0)
 
 #cap.set(3, 640) #Does not work properly, So have to use imutils
-#cap.set(4, 480)
+#cap.set(4, 4800)
 
 imgBackground = cv2.imread("Resources/Background.png")
 
@@ -91,7 +91,7 @@ while True:
     if selectionlist[1] != -1:
         imgBackground[636:636+65,340:340+65] = listImgIcons[2+selectionlist[1]]
     if selectionlist[2] != -1:
-        imgBackground[636:636+65,502:502+65] = listImgIcons[5+selectionlist[2]]
+        imgBackground[636:636+65,542:542+65] = listImgIcons[5+selectionlist[2]]
 
     #Displaying
     #cv2.imshow("Image", img)
